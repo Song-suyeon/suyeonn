@@ -1,53 +1,211 @@
-*{font-family: "맑은 고딕",Arial, Helvetica, sans-serif;}
-#wrapper
-{
-    width:1000px;
-    margin:0 auto;
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(66, 64, 64);
+
+}
+h1{
+    font-size:20px;
+    font-weight: 100;
+}
+.contents1{
+    font: size 20ppx;
+    front-weight: lighter;
+}
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+
 }
 
-header{text-align: center;}
-header h1{
-    color: #FF6347;
-    height: 80px;
-    margin: o auto;
-    display: inline;
+.contents3{
+font-size: 14px;
+font-width: 100;
+}
+
+
+.result{
+    font-size: 24px;
+}
+
+.intro_bg{
+    background-image:url("image/cntt.jpg");
+    width:100%;
+    height:750px;
+}
+
+.header{
+    display:flex;
+    width:1280px;
+    margin:auto;
+    height:86px;
+}
+.searchArea{
+    width:300px;
+    height:40px;
+    background:rgb(88, 114, 103);
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.searchArea > form > input{
+    border:none;
+    width:250px;
+    height:40px;
+    background:rgba(0,0,0,0,0);
+    color:rgb(177, 108, 108);
+    padding-left:10px;
+    }
+.searchArea > form > span{
+    width:50px;
+    color:rgb(247, 214, 214)
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width:calc(1280px-300px);
+}
+.nav> li{
+    margin-left:84px;
+}
+
+.nav > li > a {
+    color:rgb(97, 93, 93);
+}
+
+.amount{
+    position: relative;
+    top:-66px;
+    display: flex;
+    width: 1280px;
+ 
+    margin:auto;
+}
+
+.amount > li {
+    flex: 1;
+    height: 132px;
+    
+}
+
+.amount > li > div {
+    text-align: center;
+    
+
+    margin-top:37px;
+    height: 57px;
+}
+
+.amount > li:not(:last-child) >div{
+    border-right:1px solid gray;
+}
+
+.intro_text{
+    width:100%
+    margin: 230px auto 230px auto;
+    text-align: center;
+  
+}
+
+.intro_text > h1 {
+    font-size: 20px;
+}
+.intro_text > h1,
+.intro_text > h4{
+    color:seashell;
+}
+
+.main_text0{
+width: 100%;
+height: 61px;
+margin-top: -132px;
+background: #f1f2f3
+}
+
+.main_text0 > h1 {
+padding-top: 116px;
+text-align: center;
+
+}
+.main_text0 > .contents1{
     text-align: center;
 }
-ul {list-style-type: none;}
-a{ text-decoration:none ;}
-nav ul {
-    text-align: center; border-top: 2px solid #7c9b0c;
-    border-bottom: 2px solid #7c9b0c; padding: 15px 10px;
+
+.icons{
+    display: flex;
+    width: 1280px;
+    height: 302px;
+   
+    margin: auto;
 }
-nav ul li {
-    display: inline;
-    padding: 15px 20px;
-    letter-spacing: 5px;
-    margin: 0 auto;
+
+.icons > li{
+    flex: 1;
+    background: white;
+    margin-top: 49px;
+    height: 302px;
+    text-align: center;
 }
-nav ul li:hover {
-    background-color: #d36cd6;
+
+.icons > li >.icon_img{
+    margin-top: 15px;
 }
-nav li a:hover{
-    color:wheat;
+
+.icons > li:not(:last-child){
+    margin-right:20px;
 }
-body{
-    margin: 0px auto;
-    max-width: 1000px;
+
+.icons .contents2 {
+    width:180px;
+    margin: auto;
 }
-#link {border: 3px solid rgb
-   padding: 5px 5px;
-   margin: 0px auto;
-   border-bottom: 5px;
+    
+.more{
+    width:100px;
+    height:30px;
+    background:#727780;
+    color:white;
+    font-size:12px;
+    line-height: 30px;
+    margin: 25px auto;
 }
-#login {border: 3px solid rgb(red, green, blue)
-    padding: 5px 5px;
-    border-top: 5px;
- }
-section{display: flex;}
-article{width: 85%;}
-aside{width: 20%;}
-footer{border-top: 10px;}
-© 2021 GitHub, Inc.
-Terms
-Privacy
+
+.more2 {
+    width:220px;
+    height:40px;
+    border:1px solid #fff;
+    color:#fff
+    line-height: 40px;
+    cursor:pointer;
+    margin: 16px auto;
+}
+
+
+
+.footer{
+    display: flex;
+    background: #1f1f1f;
+    padding:30px;
+  }
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: #fff;
+  }
+  .footer > div:last-child {
+    flex:9;
+    color: #fff;
+  }
+  
+  .login {
+      margin: auto;
+  }
